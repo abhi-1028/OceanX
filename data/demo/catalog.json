@@ -1,0 +1,575 @@
+{
+  "regions": [
+    {
+      "id": "pacific",
+      "name": "Pacific Ocean",
+      "type": "ocean",
+      "center": [
+        -150,
+        0
+      ],
+      "bbox": [
+        -180,
+        180,
+        -60,
+        60
+      ],
+      "facts": [
+        "Largest ocean basin",
+        "Strong equatorial current systems",
+        "Wide range of climate zones"
+      ]
+    },
+    {
+      "id": "atlantic",
+      "name": "Atlantic Ocean",
+      "type": "ocean",
+      "center": [
+        -30,
+        15
+      ],
+      "bbox": [
+        -80,
+        20,
+        -60,
+        60
+      ],
+      "facts": [
+        "Major overturning circulation basin",
+        "Dense observing network",
+        "High-latitude exchange"
+      ]
+    },
+    {
+      "id": "indian",
+      "name": "Indian Ocean",
+      "type": "ocean",
+      "center": [
+        75,
+        -10
+      ],
+      "bbox": [
+        20,
+        120,
+        -60,
+        30
+      ],
+      "facts": [
+        "Strong monsoon forcing",
+        "Warm tropical basin",
+        "Seasonal circulation reversals"
+      ]
+    },
+    {
+      "id": "southern",
+      "name": "Southern Ocean",
+      "type": "ocean",
+      "center": [
+        0,
+        -55
+      ],
+      "bbox": [
+        -180,
+        180,
+        -70,
+        -40
+      ],
+      "facts": [
+        "Connects major ocean basins",
+        "Circumpolar current system",
+        "High-latitude carbon exchange"
+      ]
+    },
+    {
+      "id": "arctic",
+      "name": "Arctic Ocean",
+      "type": "ocean",
+      "center": [
+        0,
+        82
+      ],
+      "bbox": [
+        -180,
+        180,
+        65,
+        90
+      ],
+      "facts": [
+        "Smallest ocean basin",
+        "Seasonal sea-ice cycle",
+        "Strong freshwater influence"
+      ]
+    },
+    {
+      "id": "bay-of-bengal",
+      "name": "Bay of Bengal",
+      "type": "region",
+      "parent": "indian",
+      "center": [
+        88,
+        15
+      ],
+      "bbox": [
+        78,
+        100,
+        5,
+        23
+      ],
+      "facts": [
+        "Strong monsoon rainfall influence",
+        "Large riverine freshwater input",
+        "Warm tropical upper ocean"
+      ]
+    },
+    {
+      "id": "arabian-sea",
+      "name": "Arabian Sea",
+      "type": "region",
+      "parent": "indian",
+      "center": [
+        64,
+        15
+      ],
+      "bbox": [
+        52,
+        75,
+        5,
+        25
+      ],
+      "facts": [
+        "Monsoon-driven upwelling",
+        "High biological productivity",
+        "Seasonal current reversal"
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "id": "temperature",
+      "name": "Temperature",
+      "unit": "\u00b0C",
+      "min": -2,
+      "max": 35,
+      "source": "model",
+      "depth": true
+    },
+    {
+      "id": "salinity",
+      "name": "Salinity",
+      "unit": "PSU",
+      "min": 30,
+      "max": 40,
+      "source": "model",
+      "depth": true
+    },
+    {
+      "id": "chlorophyll",
+      "name": "Chlorophyll-a",
+      "unit": "mg/m\u00b3",
+      "min": 0,
+      "max": 4,
+      "source": "model",
+      "depth": true
+    },
+    {
+      "id": "current_speed",
+      "name": "Ocean Current Speed",
+      "unit": "m/s",
+      "min": 0,
+      "max": 2.2,
+      "source": "model",
+      "depth": true
+    },
+    {
+      "id": "wind_speed",
+      "name": "Wind Speed",
+      "unit": "m/s",
+      "min": 0,
+      "max": 22,
+      "source": "model",
+      "depth": false
+    },
+    {
+      "id": "wind_direction",
+      "name": "Wind Direction",
+      "unit": "\u00b0",
+      "min": 0,
+      "max": 360,
+      "source": "model",
+      "depth": false
+    },
+    {
+      "id": "sea_surface_height",
+      "name": "Sea Surface Height",
+      "unit": "m",
+      "min": -1,
+      "max": 1,
+      "source": "model",
+      "depth": false
+    },
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "unit": "dbar",
+      "min": 0,
+      "max": 1000,
+      "source": "calculated",
+      "depth": true
+    },
+    {
+      "id": "density",
+      "name": "Density",
+      "unit": "kg/m\u00b3",
+      "min": 1020,
+      "max": 1030,
+      "source": "calculated",
+      "depth": true
+    }
+  ],
+  "times": [
+    "2026-09-24T00:00:00Z",
+    "2026-09-25T00:00:00Z",
+    "2026-09-26T00:00:00Z",
+    "2026-09-27T00:00:00Z",
+    "2026-09-28T00:00:00Z"
+  ],
+  "depths": [
+    0,
+    10,
+    50,
+    100,
+    500,
+    1000
+  ],
+  "observations": [
+    {
+      "platform_id": "ARGO-BOB-001",
+      "platform_type": "ARGO",
+      "latitude": 12.4,
+      "longitude": 86.2,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 27.906,
+          "salinity_psu": 34.481,
+          "chlorophyll_mg_m3": 1.45
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 27.851,
+          "salinity_psu": 34.498,
+          "chlorophyll_mg_m3": 1.377
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 27.631,
+          "salinity_psu": 34.566,
+          "chlorophyll_mg_m3": 1.131
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.356,
+          "salinity_psu": 34.651,
+          "chlorophyll_mg_m3": 0.89
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.156,
+          "salinity_psu": 35.331,
+          "chlorophyll_mg_m3": 0.08
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.406,
+          "salinity_psu": 36.181,
+          "chlorophyll_mg_m3": 0.08
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    },
+    {
+      "platform_id": "ARGO-BOB-014",
+      "platform_type": "ARGO",
+      "latitude": 17.2,
+      "longitude": 91.1,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 28.183,
+          "salinity_psu": 34.43,
+          "chlorophyll_mg_m3": 1.551
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 28.128,
+          "salinity_psu": 34.447,
+          "chlorophyll_mg_m3": 1.47
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 27.908,
+          "salinity_psu": 34.515,
+          "chlorophyll_mg_m3": 1.181
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.633,
+          "salinity_psu": 34.6,
+          "chlorophyll_mg_m3": 0.869
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.433,
+          "salinity_psu": 35.28,
+          "chlorophyll_mg_m3": 0.162
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.683,
+          "salinity_psu": 36.13,
+          "chlorophyll_mg_m3": 0.099
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    },
+    {
+      "platform_id": "ARGO-IND-021",
+      "platform_type": "ARGO",
+      "latitude": -6.8,
+      "longitude": 76.5,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 27.971,
+          "salinity_psu": 34.445,
+          "chlorophyll_mg_m3": 1.559
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 27.916,
+          "salinity_psu": 34.462,
+          "chlorophyll_mg_m3": 1.464
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 27.696,
+          "salinity_psu": 34.53,
+          "chlorophyll_mg_m3": 1.12
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.421,
+          "salinity_psu": 34.615,
+          "chlorophyll_mg_m3": 0.763
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.221,
+          "salinity_psu": 35.295,
+          "chlorophyll_mg_m3": 0.174
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.471,
+          "salinity_psu": 36.145,
+          "chlorophyll_mg_m3": 0.115
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    },
+    {
+      "platform_id": "ARGO-ARA-009",
+      "platform_type": "ARGO",
+      "latitude": 14.0,
+      "longitude": 64.0,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 28.295,
+          "salinity_psu": 34.667,
+          "chlorophyll_mg_m3": 1.467
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 28.24,
+          "salinity_psu": 34.684,
+          "chlorophyll_mg_m3": 1.364
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 28.02,
+          "salinity_psu": 34.752,
+          "chlorophyll_mg_m3": 1.005
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.745,
+          "salinity_psu": 34.837,
+          "chlorophyll_mg_m3": 0.669
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.545,
+          "salinity_psu": 35.517,
+          "chlorophyll_mg_m3": 0.085
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.795,
+          "salinity_psu": 36.367,
+          "chlorophyll_mg_m3": 0.08
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    },
+    {
+      "platform_id": "GLIDER-IND-02",
+      "platform_type": "GLIDER",
+      "latitude": 5.5,
+      "longitude": 82.0,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 28.367,
+          "salinity_psu": 34.666,
+          "chlorophyll_mg_m3": 1.359
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 28.312,
+          "salinity_psu": 34.683,
+          "chlorophyll_mg_m3": 1.262
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 28.092,
+          "salinity_psu": 34.751,
+          "chlorophyll_mg_m3": 0.941
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.817,
+          "salinity_psu": 34.836,
+          "chlorophyll_mg_m3": 0.673
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.617,
+          "salinity_psu": 35.516,
+          "chlorophyll_mg_m3": 0.08
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.867,
+          "salinity_psu": 36.366,
+          "chlorophyll_mg_m3": 0.08
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    },
+    {
+      "platform_id": "CTD-ATL-07",
+      "platform_type": "CTD",
+      "latitude": 25.1,
+      "longitude": -39.0,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 27.92,
+          "salinity_psu": 34.472,
+          "chlorophyll_mg_m3": 1.335
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 27.865,
+          "salinity_psu": 34.489,
+          "chlorophyll_mg_m3": 1.252
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 27.645,
+          "salinity_psu": 34.557,
+          "chlorophyll_mg_m3": 0.987
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.37,
+          "salinity_psu": 34.642,
+          "chlorophyll_mg_m3": 0.772
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.17,
+          "salinity_psu": 35.322,
+          "chlorophyll_mg_m3": 0.08
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.42,
+          "salinity_psu": 36.172,
+          "chlorophyll_mg_m3": 0.08
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    },
+    {
+      "platform_id": "BGC-PAC-11",
+      "platform_type": "BGC",
+      "latitude": 2.5,
+      "longitude": -148.0,
+      "timestamp": "2026-09-26T10:00:00Z",
+      "profiles": [
+        {
+          "depth_m": 0,
+          "temperature_c": 27.911,
+          "salinity_psu": 34.523,
+          "chlorophyll_mg_m3": 1.416
+        },
+        {
+          "depth_m": 10,
+          "temperature_c": 27.856,
+          "salinity_psu": 34.54,
+          "chlorophyll_mg_m3": 1.343
+        },
+        {
+          "depth_m": 50,
+          "temperature_c": 27.636,
+          "salinity_psu": 34.608,
+          "chlorophyll_mg_m3": 1.101
+        },
+        {
+          "depth_m": 100,
+          "temperature_c": 27.361,
+          "salinity_psu": 34.693,
+          "chlorophyll_mg_m3": 0.875
+        },
+        {
+          "depth_m": 500,
+          "temperature_c": 25.161,
+          "salinity_psu": 35.373,
+          "chlorophyll_mg_m3": 0.08
+        },
+        {
+          "depth_m": 1000,
+          "temperature_c": 22.411,
+          "salinity_psu": 36.223,
+          "chlorophyll_mg_m3": 0.08
+        }
+      ],
+      "source": "demo",
+      "quality": "simulated"
+    }
+  ]
+}
